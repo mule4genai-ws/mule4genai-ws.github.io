@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +16,14 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: rgb(214, 239, 247);
             color: white;
             padding: 15px 0;
             text-align: center;
         }
+
         section {
             margin: 20px;
             padding: 20px;
@@ -28,11 +31,13 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             font-family: Arial, sans-serif;
             font-weight: bold;
             color: #333;
         }
+
         p {
             line-height: 1.6;
             color: #333;
@@ -42,49 +47,80 @@
 
 <body class="w3-content" style="max-width:1600px;">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-    <div class="w3-container">
-      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-        <i class="fa fa-remove"></i>
-      </a>
-      <h4 class="w3-text-light-blue"><i class="fa fa-calendar-check-o w3-margin-right"></i>Workshop Agenda</h4>
-      <p class="w3-text-grey">Your journey into MuleSoft and GenAI begins here!</p>
-    </div>
-    <div class="w3-bar-block">
-      <a href="https://mule4genai-ws.github.io/index.html" class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i class="fa fa-info-circle fa-fw w3-margin-right"></i>About the Workshop</a>     
-      <a href="https://mule4genai-ws.github.io/website/tabs/intro.html" class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>Introduction</a>     
-      <a href="https://mule4genai-ws.github.io/website/tabs/techsetup.html" class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i class="fa fa-cogs fa-fw w3-margin-right"></i>Technical Setup</a>
-      <a href="https://mule4genai-ws.github.io/website/tabs/module-1.html" class="w3-bar-item w3-button w3-padding w3-text-black w3-light-grey w3-hover-light-blue"><i class="fa fa-share-alt fa-fw w3-margin-right"></i>Module 1 - Agentforce and MuleSoft</a>
-      <a href="https://mule4genai-ws.github.io/website/tabs/module-2.html" class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i class="fa fa-comments fa-fw w3-margin-right"></i>Module 2 - Interacting with LLMs</a>
-      <a href="https://mule4genai-ws.github.io/website/tabs/module-3.html" class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i class="fa fa-lock fa-fw w3-margin-right"></i>Module 3 - Securing LLM Interactions</a>
-      <a href="https://mule4genai-ws.github.io/website/tabs/module-4.html" class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i class="fa fa-rocket fa-fw w3-margin-right"></i>Module 4 - LLM-powered Automation</a>
-      <a href="https://mule4genai-ws.github.io/website/tabs/resources.html" class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i class="fa fa-book fa-fw w3-margin-right"></i>Resources</a>
-    </div>
-  </nav>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="w3-text-light-blue"><i class="fa fa-calendar-check-o w3-margin-right"></i>Workshop Agenda</h4>
+            <p class="w3-text-grey">Your journey into MuleSoft and GenAI begins here!</p>
+        </div>
+        <div class="w3-bar-block">
+            <a href="https://mule4genai-ws.github.io/index.html"
+                class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i
+                    class="fa fa-info-circle fa-fw w3-margin-right"></i>About the Workshop</a>
+            <a href="https://mule4genai-ws.github.io/website/tabs/intro.html"
+                class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i
+                    class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>Introduction</a>
+            <a href="https://mule4genai-ws.github.io/website/tabs/techsetup.html"
+                class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i
+                    class="fa fa-cogs fa-fw w3-margin-right"></i>Technical Setup</a>
+            <a href="https://mule4genai-ws.github.io/website/tabs/module-1.html"
+                class="w3-bar-item w3-button w3-padding w3-text-black w3-light-grey w3-hover-light-blue"><i
+                    class="fa fa-share-alt fa-fw w3-margin-right"></i>Module 1 - Agentforce and MuleSoft</a>
+            <a href="https://mule4genai-ws.github.io/website/tabs/module-2.html"
+                class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i
+                    class="fa fa-comments fa-fw w3-margin-right"></i>Module 2 - Interacting with LLMs</a>
+            <a href="https://mule4genai-ws.github.io/website/tabs/module-3.html"
+                class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i
+                    class="fa fa-lock fa-fw w3-margin-right"></i>Module 3 - Securing LLM Interactions</a>
+            <a href="https://mule4genai-ws.github.io/website/tabs/module-4.html"
+                class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i
+                    class="fa fa-rocket fa-fw w3-margin-right"></i>Module 4 - LLM-powered Automation</a>
+            <a href="https://mule4genai-ws.github.io/website/tabs/resources.html"
+                class="w3-bar-item w3-button w3-padding w3-hover-light-blue"><i
+                    class="fa fa-book fa-fw w3-margin-right"></i>Resources</a>
+        </div>
+    </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px; border-left: 1px solid #000000;">
-<header>
-    <h1>MuleSoft for Agentforce / Gen AI Workshop</h1>
-</header>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px; border-left: 1px solid #000000;">
+        <header>
+            <div class="w3-container" style="display: flex; align-items: center;">
+              <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" style="margin-right: 20px; color: black" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+              <h1><b>MuleSoft for Agentforce / Gen AI Workshop</b></h1>
+            </div>
+          </header>
 
-<section>
-    <h1>Module 1 - Agentforce and MuleSoft</h1>
-    <p><strong>Discover the Power of Integration!</strong> This module will introduce the exciting integration between Agentforce and MuleSoft. Learn how to use Topic Center to configure and manage topics effortlessly, optimizing your data flow and efficiency. </p>
-    <p>Participants will engage in a hands-on experience to <strong>view and configure Topics</strong> within the Anypoint platform, while exploring how MuleSoft can enhance data connectivity and streamline workflows. The Agentforce demo with Topic Center will showcase how seamlessly MuleSoft supports end-to-end integration.</p>
-    <div class="w3-card w3-container w3-center w3-mobile w3-padding w3-animate-opacity" style="background-color: #f0f8ff;"> 
-        <img class="w3-image" src="../img/placeholder-image.png" alt="Agentforce and MuleSoft Integration">
-        <p><em>Get ready to visualize the integration in action!</em></p>
-    </div>
-</section>
-<div>
-<section style="text-align: left; font-size: 14px">
-<p> Last updated Oct 2024. MuleSoft Solutions Engineering Team </p>
-</section>
-</div>
+        <section>
+            <h1>Module 1 - Agentforce and MuleSoft</h1>
+            <p><strong>Discover the Power of Integration!</strong> This module will introduce the exciting integration
+                between Agentforce and MuleSoft. Learn how to use Topic Center to configure and manage topics
+                effortlessly, optimizing your data flow and efficiency. </p>
+            <p>Participants will engage in a hands-on experience to <strong>view and configure Topics</strong> within
+                the Anypoint platform, while exploring how MuleSoft can enhance data connectivity and streamline
+                workflows. The Agentforce demo with Topic Center will showcase how seamlessly MuleSoft supports
+                end-to-end integration.</p>
+            <div class="w3-card w3-container w3-center w3-mobile w3-padding w3-animate-opacity"
+                style="background-color: #f0f8ff;">
+                <img class="w3-image" src="../img/placeholder-image.png" alt="Agentforce and MuleSoft Integration">
+                <p><em>Get ready to visualize the integration in action!</em></p>
+            </div>
+        </section>
+        <div>
+            <section style="text-align: left; font-size: 14px">
+                <p> Last updated Oct 2024. MuleSoft Solutions Engineering Team </p>
+            </section>
+        </div>
+
+        <script src="website/scripts/sidebar.js"></script>
+
 </body>
+
 </html>

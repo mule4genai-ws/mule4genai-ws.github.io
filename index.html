@@ -42,10 +42,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px; border-left: 1px solid #000000;">
   <!-- Header -->
-  <header >
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>MuleSoft for Agentforce / Gen AI Workshop</b></h1>
+  <header>
+    <div class="w3-container" style="display: flex; align-items: center;">
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" style="margin-right: 20px;" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <h1><b>MuleSoft for Agentforce / Gen AI Workshop</b></h1>
     </div>
   </header>
 <!-- End Header -->
@@ -74,18 +74,7 @@ The use case presented here is to set the business context for the workshop. The
 <p style="margin-top:50px;"> &nbsp;</p>
 </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+<script src="website/scripts/sidebar.js"></script>
 
 </body>
 </html>
